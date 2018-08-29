@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hammad Ahmed</title>
+	<meta charset="utf-8">
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		html, body {
+			font-family: Courier, sans-serif;
+			line-height: 1.8;
+		}
+
+		.large-container {
+			margin: 10px;
+		}
+
+		.large-container h2 {
+			margin-bottom: 0;
+		}
+
+		.wide-container {
+			margin: 50px;
+		}
+
+		.medium-container {
+			margin: 0 auto;
+			width: 550px;
+		}
+
+		.row {
+			display: flex;
+			justify-content: center;
+
+		}
+
+		.half-container {
+			width: 40%;
+			padding: 50px;
+			margin: 5px;
+			background-color: #f7f6f6;
+		}
+
+		.main-heading {
+			font-size: 2.5em
+		}
+
+		.jumbotron {
+			padding: 100px;
+			background-color: blue;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<header class="large-container">
+		<h2>Hammad Ahmed</h1>
+		<small>Web Developer</small>
+	</header>
+	<section class="medium-container jumbotron">
+		<h1 class="main-heading">I develop websites that help people succeed online</h1>
+	</section>
+	<div class="wide-container row">
+		<section class="half-container">
+			<h2>About Me</h2>
+			<p>Hello there, my name is Hammad Ahmed. I'm a student and self-taught web developer. While I'm not studying for exams, doing web development or appreciating good design, you can find me watching disturbing movies (which give me an existential crisis), sensing weird tastes in normal food and uploading my brain to Evernote one note at a time.</p>
+		</section>
+		<section class="half-container">
+			<h2>Contact Information</h2>
+			<p>You can contact me using the following mediums.</p>
+			<ul>
+				<li>Email Address: <a id="email"></a></li>
+				<li>Twitter: <a href="https://twitter.com/shammadahmed" target="_blank">@shammadahmed</a></li>
+				<li>GitHub: <a href="https://github.com/shammadahmed" target="_blank">@shammadahmed</a></li>
+			</ul>
+		</section>
+	</div>
+	<script>
+		const username = 'shammad.c5',
+			  domain   = 'hotmail.com',
+			  emailAddress = username + '@' + domain,
+			  emailLink = document.getElementById('email');
+
+		emailLink.setAttribute('href', 'mailto:' + emailAddress);
+		emailLink.textContent = emailAddress;
+	</script>
+</body>
+</html>
