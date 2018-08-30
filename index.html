@@ -14,8 +14,26 @@
 		html, body {
 			font-family: Courier, sans-serif;
 			line-height: 1.8;
-			width: 100%;
 			word-wrap: break-word;
+		}
+
+		a, .link {
+			text-decoration: none;
+		}
+
+		a {
+			color: black;
+		}
+
+		.link {
+			background-color: black;
+			color: white;
+		}
+
+		strong {
+			background-color: white;
+			color: blue;
+			padding: 5px;
 		}
 
 		.large-container {
@@ -27,7 +45,7 @@
 		}
 
 		.wide-container {
-			margin: 45px;
+			margin: 30px;
 		}
 
 		.medium-container {
@@ -43,8 +61,8 @@
 		.half-container {
 			flex: 1;
 			width: 100%;
-			padding: 50px;
-			margin-bottom: 10px;
+			padding: 40px;
+			margin-bottom: 30px;
 			background-color: #f7f6f6;
 		}
 
@@ -53,7 +71,7 @@
 		}
 
 		.jumbotron {
-			padding: 70px;
+			padding: 40px;
 			background-color: blue;
 			color: white;
 		}
@@ -79,24 +97,25 @@
 </head>
 <body>
 	<header class="large-container">
-		<h2>Hammad Ahmed</h1>
+		<h2><a href="/">Hammad Ahmed</a></h1>
 		<small>Web Developer</small>
 	</header>
 	<section class="medium-container jumbotron">
-		<h1 class="main-heading">I develop websites that help people succeed online</h1>
+		<h1 class="main-heading">I <strong>develop</strong> websites that <strong>help</strong> people <strong>succeed</strong> online</h1>
 	</section>
 	<div class="wide-container row">
 		<section class="half-container">
 			<h2>About Me</h2>
-			<p>Hello there, my name is Hammad Ahmed. I'm a student and self-taught web developer. While I'm not studying for exams, doing web development or appreciating good design, you can find me watching disturbing movies (which give me an existential crisis), sensing weird tastes in normal food and uploading my brain to Evernote one note at a time.</p>
+			<p>Hello there, my name is Hammad Ahmed. I'm a student and self-taught web developer. While I'm not studying for exams, doing web development or appreciating good design, you can find me watching disturbing movies (enough to inflict an existential crisis), sensing weird tastes in normal food and uploading my brain to Evernote one note at a time.</p>
 		</section>
 		<section class="half-container">
 			<h2>Contact Information</h2>
-			<p>You can contact me using the following mediums.</p>
+			<p>Want me to work on your project or just say hi? Use the following mediums.</p>
+			<br>
 			<ul>
-				<li>Email Address: <a id="email"></a></li>
-				<li>Twitter: <a href="https://twitter.com/shammadahmed" target="_blank">@shammadahmed</a></li>
-				<li>GitHub: <a href="https://github.com/shammadahmed" target="_blank">@shammadahmed</a></li>
+				<li>Email Address: <a class="link" id="email"></a></li>
+				<li>Twitter: <a class="link" href="https://twitter.com/shammadahmed" target="_blank">@shammadahmed</a></li>
+				<li>GitHub: <a class="link" href="https://github.com/shammadahmed" target="_blank">@shammadahmed</a></li>
 			</ul>
 		</section>
 	</div>
